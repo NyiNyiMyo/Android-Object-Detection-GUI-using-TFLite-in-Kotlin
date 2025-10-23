@@ -1,0 +1,26 @@
+buildscript {
+    // It's a good practice to define versions in 'ext' block
+    ext {
+    kotlin_version = "1.8.10" // A more recent version of Kotlin
+    agp_version = "7.4.2"      // A compatible AGP version
+}
+repositories {
+    google()
+    mavenCentral()
+}
+dependencies {
+    classpath "com.android.tools.build:gradle:$agp_version"
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+}
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

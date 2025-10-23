@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Makers - Object Detection GUI </string>
+    <string name="tv_take_photo">Take photo</string>
+    <string name="tv_description">Select any image or take a new photo</string>
+    <string name="tv_placeholder">Object Detection GUI</string>
+</resources>
